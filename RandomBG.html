@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Random BG-color</title>
+    <style>
+        body{
+            height: 100vh; width: 100%;
+            margin: 0; padding: 0;
+            display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 50px;
+        }
+        button{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Random background color generator using JavaScript</h1>
+    <p>Click the start button to start changing the bg-color and Click stop button to stop changing the bg-color</p>
+    <div>
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+    </div>
+    
+
+
+    <script>
+        const randomColor = function(){
+            let color = "#";
+            for(let i = 0; i < 6; i++){
+                color += Math.floor(Math.random() * 16).toString(16);
+                // Math.random() * 16: This expression scales the random number to a range between 0 (inclusive) and 16 (exclusive).
+                //The Math.floor() function rounds down the result to the nearest integer, giving a random integer between 0 and 15.
+                // .toString(16): This converts the integer to a hexadecimal string. The 16 argument specifies the base for the conversion (hexadecimal).
+
+                // alternatively you can use the following code:
+                // hex = "0123456789ABCDEF"; *before the for loop
+                // color += hex[Math.floor(Math.random() * 16)]; *inside thr for loop
+            }
+            return color;
+        }
+
+        let interval;
+
+        const startColorchange = function(){
+            changeColor = () => {
+                // change the background color of the body.
+                document.body.style.backgroundColor = randomColor(); 
+            }
+
+            if(!interval){
+                // check if the interval is not set and then set it.
+                interval = setInterval(changeColor, 1000);
+            }
+        }
+        
+        const stopColorchange = function(){
+            // clear the interval. 
+           clearInterval(interval);
+
+            // Set interval to null for better memory utilization
+           interval = null;
+        }
+
+        document.querySelector("#start").addEventListener("click", startColorchange);
+
+        document.querySelector("#stop").addEventListener("click", stopColorchange);
+    </script>
+</body>
+</html>
