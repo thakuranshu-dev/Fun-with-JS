@@ -10,7 +10,7 @@ Welcome to Fun with JS! This repository is a collection of fun and creative Java
 
 Here are some of the exciting projects you will find in this repository:
 
-- **Project 1:** Description of the project
+- **Project 1:** Random Background color generator.
 - **Project 2:** Description of the project
 - **Project 3:** Description of the project
 
