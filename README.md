@@ -4,7 +4,7 @@ A playful collection of creative JavaScript projects and experiments to explore 
 
 ## Introduction
 
-Welcome to Fun with JS! This repository is a collection of fun and creative JavaScript projects. Whether you are a beginner or an experienced developer, these projects will help you explore the joy of coding and improve your JavaScript skills.
+Welcome to Fun with JS! This repository is a collection of fun and creative JavaScript projects. If you are a beginner developer, these projects will help you explore the joy of coding and improve your JavaScript skills.
 
 ## Projects
 
