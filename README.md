@@ -11,7 +11,7 @@ Welcome to Fun with JS! This repository is a collection of fun and creative Java
 Here are some of the exciting projects you will find in this repository:
 
 - **Project 1:** Random Background color generator.
-- **Project 2:** Description of the project
+- **Project 2:** Eye Tracker with JS
 - **Project 3:** Description of the project
 
 Feel free to explore each project and try them out!
